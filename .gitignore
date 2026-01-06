@@ -1,0 +1,32 @@
+# Exclude Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Exclude temporary files
+temp_*
+*.tmp
+
+# Exclude virtual environment
+venv/
+env/
+ENV/
+
+# Exclude IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Exclude logs
+logs/
+*.log
+
+# Exclude system files
+.DS_Store
+Thumbs.db
+
+# Exclude test images (if any)
+test_images/
+sample_images/

@@ -106,8 +106,12 @@ def main():
         with col2:
             st.subheader("✅ Validation Results")
             
+            # Create temp directory if it doesn't exist
+            import os
+            os.makedirs("temp", exist_ok=True)
+            
             # Save uploaded file temporarily for validation
-            temp_path = f"temp_{uploaded_file.name}"
+            temp_path = os.path.join("temp", f"temp_{uploaded_file.name}")
             with open(temp_path, "wb") as f:
                 f.write(uploaded_file.getbuffer())
             
